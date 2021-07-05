@@ -46,18 +46,18 @@ const preloader = document.querySelector(".pre-loader");
 window.addEventListener("load", () => (preloader.style.display = "none"));
 
 
-const conbtn = document.querySelector(".conbtn");
-const navBtn1 = document.querySelector(".nav-btn1");
-const navBtn2 = document.querySelector(".nav-btn2");
-const navBtn3 = document.querySelector(".nav-btn3");
-const navBtn4 = document.querySelector(".nav-btn4");
-const navBtn5 = document.querySelector(".nav-btn5");
+// const conbtn = document.querySelector(".conbtn");
+// const navBtn1 = document.querySelector(".nav-btn1");
+// const navBtn2 = document.querySelector(".nav-btn2");
+// const navBtn3 = document.querySelector(".nav-btn3");
+// const navBtn4 = document.querySelector(".nav-btn4");
+// const navBtn5 = document.querySelector(".nav-btn5");
 
-const about = document.querySelector(".row");
-const skills = document.querySelector(".skills");
-const portfolio = document.querySelector(".portfolios");
-const services = document.querySelector(".services");
-const contact = document.querySelector(".contact");
+// const about = document.querySelector(".about");
+// const skills = document.querySelector(".skills");
+// const portfolio = document.querySelector(".projects");
+// const home = document.querySelector(".home");
+// const contact = document.querySelector(".contact");
 
 // navBtn2.addEventListener('click', () => {
 //     portfolio.classList.remove("sec-dis")
