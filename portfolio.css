@@ -67,7 +67,7 @@ li{
 }
 .day i{
     font-size: 30px;
-    color: var(--primary);
+    color: var(--white);
 }
 .night{
     display: none;
@@ -81,7 +81,7 @@ li{
 }
 .night i{
     font-size: 30px;
-    color: var(--primary);
+    color: var(--white);
 }
 header{
     position: relative;
