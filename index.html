@@ -16,34 +16,49 @@
 </head>
 
 <body>
-    <!-- <div class="pre-loader">
+    <div class="pre-loader">
         <i class="fas fa-spinner loader"></i>
-    </div> -->
+    </div>
     <button class="day"><i class="fas fa-sun"></i></button>
     <button class="night"> <i class="fas fa-moon"></i></button>
 
 
     <nav class="navbar">
         <!-- Navbar content -->
-        <a class="navbar-brand" href="#">
-            <h1><a href="#" class="logo">MADHUR DIXIT</a></h1>
-        </a>
+        <div class="container d-flex justify-content-center">
+
+
+            <a class="navbar-brand" href="#">
+
+                <h1 style="display:flex;width:fit-content;">
+                    <a href="#" class="logo">MADHUR DIXIT</a>
+                </h1>
+
+            </a>
+        </div>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars ham-btn"></i>
         </button>
+
+
+
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav nav m-0" style="flex-direction: row;justify-content: center;">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-btn nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-btn2 nav-link" href="#skills">Skills</a>
+                    <a class="nav-btn2 nav-link" href="#about">About Me</a>
                 </li>
-                <li class="nav-btn3 nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                <li class="nav-item">
+                    <a class="nav-btn3 nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-btn4 nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-btn5 nav-item">
                     <a class="nav-link" href="#contact">Contact ME</a>
                 </li>
 
@@ -51,7 +66,7 @@
         </div>
         <!-- <i class="ham-btn fas fa-bars"></i> -->
     </nav>
-    <section>
+    <section id="home">
         <div>
             <img src="page1.png" style="width:100%">
         </div>
@@ -85,7 +100,7 @@
                 <div class="col-md-6 col-sm-12 mt-5 pt-4" id="col-2">
                     <div class="container d-flex justify-content-center my-img">
                         <figure class="swing">
-                            <img src="madhur.jpeg" width="200">
+                            <img src="madhur.jpeg" width="100%">
                         </figure>
                     </div>
                 </div>
