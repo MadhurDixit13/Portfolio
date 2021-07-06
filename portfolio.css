@@ -6,7 +6,15 @@
     --gray:#333;
     --primary:#8BFBFF;
     --secondary:#FB38C8;
-    --third:#FF602A;   
+    --third:#FF602A;  
+    --linkedin: #007bb5;
+    --facebook: #1877f2;
+    --instagram: #c32aa3;
+    --twitter: #1da1f2;
+    --youtube: #ff0000; 
+    --github: #555050; 
+    --shadow-color: rgba(233, 227, 227, 0.5);
+    
 }
 *{
     margin: 0;
@@ -28,6 +36,7 @@ body.dark{
     --secondary:#8BFBFF;
     --primary:#FB38C8;
     --third:#FF602A;
+    --shadow-color: rgba(0, 0, 0, 0.5)
 }
 body.overflow{
     overflow: hidden;
@@ -369,4 +378,127 @@ border-right:2px solid burlywood;
 		box-shadow: 0 5px 15px 0px var(--whiteo);
 		transform: translatey(-20px);
 	}
+}
+#contact{
+  min-height: 100vh;
+}
+#contact ul {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+#contact li {
+  list-style: none;
+  margin: 0 40px;
+}
+#contact a {
+  position: relative;
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  text-align: center;
+  box-shadow: -20px 20px 10px var(--shadow-color);
+
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+}
+
+#contact a:before {
+
+  content: "";
+  /* position: absolute; */
+  transition: 0.5s;
+  top: 10px;
+  left: -20px;
+
+  height: 100%;
+  width: 20px;
+
+  transform: rotate(0deg) skewY(-45deg);
+}
+#contact a:after {
+  content: "";
+  /* position: absolute; */
+  transition: 0.5s;
+
+  bottom: -20px;
+  left: -10px;
+
+  height: 20px;
+  width: 100%;
+
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+#contact a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px var(--shadow-color);
+}
+.linkedin{
+  background-color: var(--linkedin);
+}
+.linkedin::before{
+  background-color: darken(var(--linkedin), 5%);
+}
+.linkedin::after{
+  background-color: lighten(var(--linkedin), 4%);
+}
+.facebook {
+  background-color: var(--facebook);
+}
+.facebook::before{
+  background-color: darken(var(--facebook), 5%);
+}
+.facebook::after{
+  background-color: lighten(var(--facebook), 4%);
+}
+.instagram{
+  background-color: var(--instagram);
+}
+.instagram::before{
+  background-color: darken(var(--instagram), 5%);
+}
+.instagram::after{
+  background-color: lighten(var(--instagram), 4%);
+}
+.twitter{
+  background-color: var(--twitter);
+}
+.twitter::before{
+  background-color: darken(var(--twitter), 5%);
+}
+.twitter::after{
+  background-color: lighten(var(--twitter), 4%);
+}
+.youtube{
+  background-color: var(--youtube);
+}
+.youtube::before{
+  background-color: darken(var(--youtube), 5%);
+}
+.youtube::after{
+  background-color: lighten(var(--youtube), 4%);
+}
+.github{
+  background-color: var(--github);
+}
+.github::before{
+  background-color: darken(var(--github), 5%);
+}
+.github::after{
+  background-color: lighten(var(--github), 4%);
+}
+#contact .fab:hover{
+  color:var(--black);
+}
+#contact .fab{
+font-size: 40px;
+color:var(--white);
+line-height: 80px;
+
+transition: 0.5s;
 }
