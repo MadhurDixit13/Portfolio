@@ -13,6 +13,9 @@
     --twitter: #1da1f2;
     --youtube: #ff0000; 
     --github: #555050; 
+    --google: #0b8a27;
+    --red:#9d0208;
+    --brown:burlywood;
     --shadow-color: rgba(233, 227, 227, 0.5);
     
 }
@@ -36,7 +39,9 @@ body.dark{
     --secondary:#8BFBFF;
     --primary:#FB38C8;
     --third:#FF602A;
-    --shadow-color: rgba(0, 0, 0, 0.5)
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --red:burlywood;
+    --brown:#6a040f;
 }
 body.overflow{
     overflow: hidden;
@@ -492,6 +497,15 @@ border-right:2px solid burlywood;
 .github::after{
   background-color: lighten(var(--github), 4%);
 }
+.google{
+  background-color: var(--google);
+}
+.google::before{
+  background-color: darken(var(--google), 5%);
+}
+.google::after{
+  background-color: lighten(var(--google), 4%);
+}
 #contact .fab:hover{
   color:var(--black);
 }
@@ -502,3 +516,61 @@ line-height: 80px;
 
 transition: 0.5s;
 }
+#contact h2{
+  color:var(--white);
+  display:block;
+  text-align: center;
+}
+#hire h2{
+  color:var(--white);
+}
+#hire {
+  color:var(--brown);
+  text-shadow: var(--shadow-color);
+}
+#hire h3{
+  color:var(--brown);
+  text-decoration: none !important;
+  text-shadow: var(--shadow-color);
+}
+/* #hire::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 70px;
+  height: 100%;
+  background: rgba(255,255,255, 0.3);
+  transform: skewX(-30deg);
+  animation-name: slide;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  } */
+  
+#hire:hover::after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease-in-out;
+  /* transition-delay: 2s; */
+}
+#hire:active::after {
+  opacity: 0;
+}
+#hire:hover { 
+	-webkit-box-shadow: 0px 2px 9px 2px rgba(128, 9, 9, 0.53);
+-moz-box-shadow: 0px 2px 9px 2px rgba(146, 37, 9, 0.53);
+box-shadow: 0px 2px 9px 2px rgba(134, 27, 8, 0.53); 
+border: 2px solid #292945 !important; } 
