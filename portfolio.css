@@ -282,10 +282,13 @@ border-right:2px solid burlywood;
   }
   
   #carousel .carousel-item.sea {
-    background-image: url("website2.png");
+    background-image: url("Ichor.png");
   }
   
   #carousel .carousel-item.river {
+    background-image: url("website3.png");
+  }
+#carousel .carousel-item.ocean {
     background-image: url("website3.png");
   }
   
